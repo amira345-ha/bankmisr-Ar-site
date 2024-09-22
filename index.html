@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankMisr</title>
+    <link rel="stylesheet" href="libs/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/libs/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-"> 
+<div class="container" dir="rtl">
+  <div class="row">
+    <div class="col">
+      <img src="imags/bmp-logo.png" width="250px" height="90px" >
+    </div>
+    <!--  start language switcher -->
+    <div class="col" id="languageSwitcher" dir="ltr">
+    <a href="#" id="ar" onclick="switchLanguage('ar')">عربي</a> |
+    <a href="#" id="en" onclick="switchLanguage('en')">En</a>
+    <!--end language switcher  -->
+    <div class="search-box" class="col" dir="ltr">
+      <input type="text" placeholder="أدخل كلمة البحث">
+      <button type="submit"><i class="search-icon"></i> </button> 
+    </div>
+</div>
+</div>
+  <button class="custom-button-bank">الانترنت البنكي</button>
+  <nav class="navbar">
+    <ul class="menu">
+      <li class="dropdown">
+       
+    <li class="dropdown">
+      <a href="#" class="dropbtn">الاستثمار واسواق الاموال</a>
+      <div class="dropdown-content">
+          <a href="#"></a>
+          <a href="#">مزادات ومناقصات</a>
+          <a href="#">الْاوراق المالية وامناء الحفظ</a>
+          <a href="#">الاستثمار المباشر</a>
+          <a href="#">أمناء الاستثمار</a>
+          <a href="#">صناديق الأستثمار</a>
+      </div>
+  </li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn"> اتصل بنا</a>
+        <div class="dropdown-content">
+            <a href="#">مقترحات وشكاوي</a>
+            <a href="#">مركز الاتصال</a>
+            <a href="#">خدمة دعم عملاء الشركات</a>
+            <a href="#">الفروع الخارجية</a>
+            <a href="#">الحوالات السريعة </a>
+            <a href="#">البريد الألكتروني</a>
+            <a href="#">المساعد الالي والمحادثات الفردية</a>
+        </div>
+  </li>
+        
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">خدمتنا الرقمية</a>
+        <div class="dropdown-content">
+            <a href="#">الانترنت البنكي</a>
+            <a href="#">محفظة بنك مصر</a>
+            <a href="#">بنك مصر اكسبريس</a>
+            <a href="#">بنك مصر اكسبريس-معاملات اسلامية</a>
+            <a href="#">خدمات مدفوعة الالكترونية </a>
+            <a href="#">كشف الحساب الالكتروني</a>
+            <a href="#">فتح حساب اكسبريسللشركات الاونلاين</a>
+            <a href="#">طلب فتح حساب بنكي للافراد اونلاين</a>
+        </div>
+    </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">تمويل المشروعات</a>
+            <div class="dropdown-content">
+                <a href="#">منصة تمويل الشركات</a>
+                <a href="#">تمويل تجار نقاط POSالبيع </a>
+                <a href="#">تمويل المشروعات متناهية الصغر</a>
+                <a href="#">تمويل المشروعات الصغيرة</a>
+                <a href="#">تمويل المشروعات الصغيرة والمتوسطة</a>
+                <a href="#">الخدمات الغير مالية-مبادرة رواد النيل</a>
+                <a href="#">دعم المصدريين</a>
+                <a href="#">برنامج زات </a>
+                <a href="#">محتاج تمول مشروعك؟</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">الوظائف</a>
+            <div class="dropdown-content">
+                <a href="#">رسالة رئيس قطاع الموارد البشرية </a>
+                <a href="#">اجراءات التوظيف</a>
+                <a href="#">مجالات التعيين الرئيسية</a>
+                <a href="#">الأسئلة المتكررة الخاصة بالوظائف</a>
+                <a href="#">قيمنا</a>
+            </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn" >بنك مصر</a>
+          <div class="dropdown-content">
+              <a href="#">التعريف بالبنك</a>
+              <a href="#">اعضاء مجلس الادارة</a>
+              <a href="#">الالتزام والحكومة</a>
+              <a href="#">مؤسسة بنك مصر لتنمية المجتمع</a>
+              <a href="#">المسئولية المجتمعية والاستدامة</a>
+              <a href="#">التثقيف والشمول المادي</a>
+              <a href="#">اخبار بنك مصر</a>
+              <a href="#">المؤشرات المالية</a>
+              <a href="#">جوائز و مراكز</a>
+              <a href="#">مواقعنا</a>
+          </div>
+      </ul>
+    </li>
+</nav>
+      <style>
+        .carousel-buttons {
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 10%;  
+        }
+        .carousel-button-left {
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .carousel-button-center {
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .carousel-button-right {
+            background-color: #ffec33;  
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        .carousel-button-left:hover {
+            background-color:#ffec33 ;
+            opacity: 0.9;
+        }
+        .carousel-button-center:hover {
+            background-color:#ffec33 ;
+            opacity: 0.9;
+        }
+        .carousel-caption {
+            position: absolute;
+            bottom: 70px;  
+            right: 0;
+            left: 0;
+            text-align: center;
+        }
+        </style>
+        <div class="container mt-5">
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="16" aria-label="Slide 16"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="17" aria-label="Slide 17"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="18" aria-label="Slide 18"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imags/Dynamic Banner Youm-B-Youm 1920X1029 Pix AR.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-buttons">
+                  <button class="carousel-button-right">معاملات الأفراد</button>
+                  <button class="carousel-button-center">معاملات الشركات</button>
+                  <button class="carousel-button-left">المعاملات الإسلامية</button>
+      
+              </div>
+              <div class="carousel-item">
+                <img src="imags/IBN MISR AR.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-buttons"> 
+                  <button class="carousel-button-right">معاملات الأفراد</button>
+                  <button class="carousel-button-center">معاملات الشركات</button>
+                  <button class="carousel-button-left">المعاملات الإسلامية</button>
+              </div>
+              <div class="carousel-item">
+                  <img src="imags/Banner POS AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/protect your data AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                  <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/loader.gif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/Kenana-Offer BM-Inside-Page.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/Dynamic Banner SMEs AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/Dollar Cert banner AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/open your account online banner AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/BM GLOBAL BANNER AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/banque misr online ar.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div> 
+                <div class="carousel-item">
+                  <img src="imags/BM corporate digital services.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/card awareness ar.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/Digital Acceptance AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/BM REWARDS CLUB DYNAMIC BANNER AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                  <img src="imags/EStatement  AR.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div>
+                <div class="carousel-item">
+                <img src="imags/Banque Misr Talaat Harb 27 certificate.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-buttons"> 
+                    <button class="carousel-button-right">معاملات الأفراد</button>
+                    <button class="carousel-button-center">معاملات الشركات</button>
+                    <button class="carousel-button-left">المعاملات الإسلامية</button>
+                </div> 
+              </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+  <script src="/libs/bootstrap.bundle.min.js">
+
+ 
+function switchLanguage(lang) {
+   
+  document.getElementById('ar').classList.remove('active');
+  document.getElementById('en').classList.remove('active');
+  if (lang === 'ar') {
+    document.getElementById('ar').classList.add('active');
+    document.body.setAttribute("dir", "rtl");  
+  } else {
+    document.getElementById('en').classList.add('active');
+    document.body.setAttribute("dir", "ltr");  
+  }
+  localStorage.setItem('preferredLanguage', lang);
+}
+function loadLanguagePreference() {
+  const savedLang = localStorage.getItem('preferredLanguage')
+  if (savedLang) {
+    switchLanguage(savedLang);
+  } else {
+    switchLanguage('en');  
+  }
+}
+window.onload = loadLanguagePreference;
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+    searchBtn.addEventListener('click', function() {
+      const searchQuery = searchInput.value;
+      if (searchQuery) {
+        alert("Searching for: " + searchQuery); 
+      } else {
+        alert("Please enter a search term.");
+      }
+    });
+  </script>  
+</body>
+</html>
